@@ -79,17 +79,8 @@ public class Time {
 		print();
 	}
 	void print() {
-		if(hour>9)
-			System.out.print(hour+":");
-		else
 			System.out.print(String.format("%02d",hour)+":");
-		if(minute>9)
-			System.out.print(minute+":");
-		else
 			System.out.print(String.format("%02d",minute)+":");
-		if(second>9)
-			System.out.print(second);
-		else
 			System.out.print(String.format("%02d",second));
 	}
 }
