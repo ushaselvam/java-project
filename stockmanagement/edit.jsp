@@ -42,19 +42,15 @@ if(rs.next()) {
 }
 </style>
 <body>
-<form> <fieldset disabled>
-    <div class="form-group">
-      <label for="identity">IDENTITY</label>
-      <input type="text" class="form-control" name="identity" id="identity" placeholder="Product Id" value="<%out.println(edit);%>">
-    </div>
-    </fieldset></form>
 <form class="form-horizontal center-content" action="updateedit.jsp" method="post">
+
 <div class="form-group">
     <label for="identity" class="col-sm-4 control-label">Product Id</label>
     <div class="col-sm-8">
-      <input type="text" class="form-control" name="identity" id="identity" placeholder="Product Id" value="<%out.println(edit);%>">
+      <input type="text" class="form-control" name="identity" id="identity" placeholder="Product Id" value="<%out.println(edit);%>" readonly>
     </div>
   </div>
+ 
   <div class="form-group">
     <label for="quantity" class="col-sm-4 control-label">Quantity</label>
     <div class="col-sm-8">
